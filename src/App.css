@@ -1,0 +1,155 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(253, 253, 253);
+  color: black;
+
+}
+
+.app {
+  background-color:rgb(233, 234, 236);
+  color: black;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: black;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: black;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+
+.addproject {
+  width: 100%;
+  max-width: 480px;
+  margin-bottom: 24px;
+  border: solid black 1px;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: grey ;
+}
+
+.addproject form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.addproject label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #444;
+  align-self: center;
+}
+
+.addproject input[type="text"],
+.addproject textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #000;
+  background: #fff;
+  border: 1.5px solid #555;
+  border-radius: 6px;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.15s;
+}
+
+.addproject input[type="text"]:focus,
+.addproject textarea:focus {
+  border-color: #1565a8;
+}
+
+.addproject textarea {
+  resize: vertical;
+  min-height: 80px;
+  line-height: 1.5;
+}
+
+.addproject button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  background: rgb(21, 101, 148);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+  margin-top: 4px;
+}
+
+.addproject button[type="submit"]:hover {
+  background: rgb(17, 82, 122);
+}
+
+
+.search {
+  width: 100%;
+  max-width: 480px;
+  min-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  min-height: 480px;
+}
+
+.search  input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #000;
+  background: #fff;
+  border: 1.5px solid #555;
+  border-radius: 6px;
+  outline: none;
+  font-family: inherit;
+  margin-bottom: 16px;
+}
+.description{
+  border: solid grey 1px;
+  gap: 10px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: rgb(18, 137, 248);
+  
+}
+.error{
+  color: red;
+}
+.filter{
+  min-height: 200px;
+  width: 100%;
+}
